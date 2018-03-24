@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 14
-  productGUID: 62780fb433be04c5b93abd908fbc4845
+  productGUID: 5e926aaafae8445c388be6226cb55c14
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   defaultScreenOrientation: 4
@@ -548,7 +548,13 @@ PlayerSettings:
   webGLUseEmbeddedResources: 0
   webGLUseWasm: 0
   webGLCompressionFormat: 1
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    1: CROSS_PLATFORM_INPUT
+    4: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    7: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    14: MOBILE_INPUT
+    17: MOBILE_INPUT
+    20: MOBILE_INPUT
   platformArchitecture: {}
   scriptingBackend: {}
   incrementalIl2cppBuild: {}
@@ -632,8 +638,8 @@ PlayerSettings:
   cloudServicesEnabled: {}
   facebookSdkVersion: 7.9.4
   apiCompatibilityLevel: 2
-  cloudProjectId: e7b49f54-73b1-4269-beb2-241ee5d04863
-  projectName: ResourceGame (1)
+  cloudProjectId: 944361b6-7e64-4ea7-a80c-2564c617c7d0
+  projectName: ResourceGame (2)
   organizationId: richardgao1
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
