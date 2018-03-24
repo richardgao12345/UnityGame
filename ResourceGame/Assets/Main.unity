@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 1272163821}
   - component: {fileID: 1272163823}
   - component: {fileID: 1272163822}
+  - component: {fileID: 1272163824}
   m_Layer: 0
   m_Name: PlayerModel
   m_TagString: Untagged
@@ -339,6 +340,17 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1272163820}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1272163824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1272163820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96c41067caace4137bb3b7b2ec5c956d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1462972467
 Prefab:
   m_ObjectHideFlags: 0
@@ -474,6 +486,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b9bcaaed39e5844bdabae3e45280f6e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lookAt: {fileID: 1272163821}
+  camTransform: {fileID: 0}
 --- !u!1 &1744564876
 GameObject:
   m_ObjectHideFlags: 0

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
 public class Movement : MonoBehaviour {
-	public float speed = 6f;
+	private Vector3 velocity;
 
 
 }
