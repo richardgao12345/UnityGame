@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour {
 	void Update () {
 		float xMovement = Input.GetAxisRaw ("Horizontal");
 		float zMovement = Input.GetAxisRaw ("Vertical");
+		float jumping = Input.GetAxisRaw ("Jump");
 
 		//create vectors for movement, transform.right is vector (1,0,0) and transform.forward is vector(0,0,1)
 		Vector3 horizontalMovement = transform.right * xMovement;
@@ -33,5 +34,8 @@ public class PlayerController : MonoBehaviour {
 		float xRotation = Input.GetAxisRaw ("Mouse Y");
 		Vector3 cameraRotation = new Vector3 (xRotation, 0f, 0f) * lookSensitivity;
 		motor.RotateCamera (cameraRotation);
+
+		float jump = Input.GetAxisRaw ("Jump");
+		motor.Jumping (jump);
 	}
 }
